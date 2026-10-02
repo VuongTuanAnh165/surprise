@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🎁 Bạn có một món quà!</title>
+
+  <!-- Open Graph — Preview khi share qua Zalo/Messenger -->
+  <meta property="og:title" content="🎁 Bạn nhận được một món quà đặc biệt!">
+  <meta property="og:description" content="Ai đó đã gửi tặng bạn một điều bất ngờ. Mở ngay nào! 💝">
+  <meta property="og:image" content="assets/images/og-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta name="description" content="Mở quà bất ngờ từ người bạn thân!">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== MÀN 1: MỒI NHỬ (The Bait) ====== -->
+  <section id="screen-bait" class="screen active">
+    <div class="particles-container" id="bait-particles"></div>
+    <div class="bait-content">
+      <div class="gift-icon" id="gift-icon-bait">
+        <span class="gift-emoji">🎁</span>
+        <div class="gift-glow"></div>
+      </div>
+      <h1 class="bait-title">Ai đó gửi cho bạn<br>một món quà đặc biệt</h1>
+      <p class="bait-subtitle">✨ Nhấn để mở quà ngay nhé! ✨</p>
+      <button id="btn-open-gift" class="btn-cta">
+        <span class="btn-icon">🎀</span>
+        <span class="btn-text">Mở quà ngay!</span>
+        <div class="btn-shimmer"></div>
+      </button>
+    </div>
+  </section>
+
+  <!-- ====== MÀN 2: RU NGỦ (The Lullaby) ====== -->
+  <section id="screen-lullaby" class="screen">
+    <div class="particles-container" id="lullaby-particles"></div>
+    <div class="lullaby-content">
+      <div class="gift-dancing" id="gift-dancing">
+        <span class="gift-emoji-large">🎁</span>
+      </div>
+      <div class="hearts-container" id="hearts-container"></div>
+      <p class="lullaby-text">Đang mở quà cho bạn... đợi xíu nha 💝</p>
+      <div class="sparkle-ring"></div>
+    </div>
+  </section>
+
+  <!-- ====== MÀN 3: CĂNG THẲNG (The Tension) ====== -->
+  <section id="screen-tension" class="screen">
+    <div class="tension-content">
+      <div class="tension-icon">📦</div>
+      <p class="tension-text">Đang tải món quà của bạn...</p>
+      <div class="progress-bar-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <span class="progress-text" id="progress-text">0%</span>
+      </div>
+      <p class="tension-hint">
+        <span class="volume-icon">🔊</span>
+        Hãy bật âm lượng to lên để nghe lời nhắn nhé!
+      </p>
+    </div>
+    <div class="glitch-overlay" id="glitch-overlay"></div>
+  </section>
+
+  <!-- ====== MÀN 4: JUMP SCARE (The Terror) ====== -->
+  <section id="screen-scare" class="screen">
+    <div class="flash-overlay" id="flash-overlay"></div>
+    <div class="scare-content" id="scare-content">
+      <img src="assets/images/scary-face.jpg" alt="" class="scary-image" id="scary-image">
+    </div>
+    <div class="blood-overlay" id="blood-overlay"></div>
+  </section>
+
+  <!-- ====== MÀN 5: TROLL REVEAL (The Punchline) ====== -->
+  <section id="screen-reveal" class="screen">
+    <div class="particles-container" id="reveal-particles"></div>
+    <div class="reveal-content">
+      <div class="gotcha-text" id="gotcha-text">
+        <span class="gotcha-main">GOTCHA!</span>
+        <span class="gotcha-emojis">😂🤣😂</span>
+      </div>
+      <p class="reveal-subtitle">Đừng giận nha, chỉ là trò đùa thôi mà~ 💕</p>
+      <div class="reveal-buttons">
+        <button id="btn-troll-again" class="btn-share btn-primary">
+          <span>🔁</span> Troll lại người khác
+        </button>
+        <button id="btn-share" class="btn-share btn-secondary">
+          <span>📤</span> Chia sẻ ngay
+        </button>
+      </div>
+      <p class="reveal-copied" id="copied-toast">✅ Đã copy link!</p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
